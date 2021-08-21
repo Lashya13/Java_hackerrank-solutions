@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                //Complete this line
+                System.out.printf("%-15s%03d%n", s1, x);
+               
+            }
+            System.out.println("================================");
+
+    }
+}
+
+
+
+
+The "-" is used to left indent
+The "15" makes the String's minimum length it takes up be 15
+The "s" (which is a few characters after %) will be substituted by our String
+The 0 pads our integer with 0s on the left
+The 3 makes our integer be a minimum length of 3
